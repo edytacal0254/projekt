@@ -96,7 +96,7 @@ for idx_bon, basic_object_name in enumerate(basic_img_list):
             converted_img.save(output_dir + "\\" + new_name, "jpeg")
             # csv data___________________________________________________________
             # data_row = [new_name, basic_object_name, bg_name, 100, 0]   # 100 czy new_s?
-            data_row = [new_name, basic_object_name, bg_name, 100, 0, cord_c[0], cord_c[1], new_width, new_height]
+            data_row = [new_name, basic_object_name, bg_name, contains, 100, 0, cord_c[0], cord_c[1], new_width, new_height]
             data_writer.writerow(data_row)
 
             nr_of_generated += 1
