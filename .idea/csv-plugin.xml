@@ -10,6 +10,27 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\created\_v0\data_v0\data_det_v0.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\created\_v0\data_v0\data_gen_v0.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\created\_v0\data_v0\data_merged_v0.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\created\data_det.csv">
           <value>
             <Attribute>

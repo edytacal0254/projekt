@@ -42,6 +42,19 @@ data_writer = csv.writer(data_file)
 
 # __________________________________________________________________________________________________
 for idx_bon, basic_object_name in enumerate(basic_img_list):
+    contains = ""
+    first_l = basic_object_name[0]
+    if first_l == "A":
+        contains = "apple"
+    elif first_l == "B":
+        contains = "car"
+    elif first_l == "C":
+        contains = "dog"
+    elif first_l == "D":
+        contains = "chair"
+    else:
+        print("Error : unknown class / wrong file name")
+
     print("Processing [" + str(idx_bon + 1) + "/" + str(basic_img_list_len) + "]")
 
     basic_object = Image.open(input_dir + "\\" + basic_object_name)
@@ -125,7 +138,7 @@ for idx_bon, basic_object_name in enumerate(basic_img_list):
                 converted_img.save(output_dir + "\\" + new_name, "jpeg")
 
                 # added column, object location and size
-                data_row = [new_name, basic_object_name, bg_name, s, idx_c, c[0], c[1], new_width, new_height]
+                data_row = [new_name, basic_object_name, bg_name, contains, s, idx_c, c[0], c[1], new_width, new_height]
                 data_writer.writerow(data_row)
 
                 nr_of_generated += 1

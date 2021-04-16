@@ -48,7 +48,8 @@ else:
     suff = "_v" + nr
 
     last_dir = os.getcwd() + "\\created\\" + suff + "\\data" + suff
-    os.mkdir(last_dir)
+    if not os.path.isdir(last_dir):
+        os.mkdir(last_dir)
     for f in files:
         os.rename(os.getcwd() + "\\created\\" + f, last_dir + "\\" + f[:len(f) - 4] + suff + ".csv")
     print(files, " moved to \\" + suff)

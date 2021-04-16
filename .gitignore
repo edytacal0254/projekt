@@ -3,5 +3,5 @@
 /pomocnicze/*
 /images/
 /created/generated/*
-/created/**/gen*
+/created/*/gen*
 /yolo-coco/*
