@@ -1,4 +1,8 @@
 /generated_/*
 /obrazy/*
 /pomocnicze/*
-tests.py
+/images/
+/created/generated/*
+/created/**/gen*
+/yolo-coco*
+
