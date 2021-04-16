@@ -4,5 +4,4 @@
 /images/
 /created/generated/*
 /created/**/gen*
-/yolo-coco*
-
+/yolo-coco/*
