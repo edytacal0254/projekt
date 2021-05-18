@@ -6,3 +6,8 @@
 /created/*/gen*
 /yolo-coco/*
 /e/*
+/from_coco_db/*
+/!from_coco_db/heatmaps/*
+/test.py
+/test1.py
+/test2.py
