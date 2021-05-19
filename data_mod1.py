@@ -3,7 +3,7 @@ import pandas as pd
 
 gen_path = os.getcwd() + "\\created\\data_gen.csv"
 det_path = os.getcwd() + "\\created\\data_det.csv"
-merged_path = os.getcwd() + "\\created\\data_merged.csv"
+merged_path = os.getcwd() + "\\created\\data_merged_v2.csv"
 
 if not (os.path.isfile(gen_path) and os.path.isfile(det_path)):
     print("data_gen.csv or data_det.csv does not exist")

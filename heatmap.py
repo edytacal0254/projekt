@@ -21,11 +21,13 @@ def add_matrix(mat, x_, y_, w_, h_):
             mat[a, b] += 1
     return mat
 
-
+#**********************************************************
 #which_one = "apple"
-which_one = "car"
+#which_one = "car"
 #which_one = "dog"
-#which_one = "chair"
+which_one = "chair"
+#**********************************************************
+
 images_dir = os.getcwd() + "\\from_coco_db\\" + which_one
 images_list = os.listdir(images_dir)
 

@@ -59,6 +59,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\created\_v2\data_v2\data_merged.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\created\_v2\data_v2\data_merged_v2.csv">
           <value>
             <Attribute>
@@ -73,6 +80,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\created\data_det_v2.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\created\data_gen.csv">
           <value>
             <Attribute>
@@ -81,6 +95,27 @@
           </value>
         </entry>
         <entry key="\created\data_merged.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\created\data_v1_v2_merged\data_det_v2.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\created\data_v1_v2_merged\data_merged.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\created\data_v1_v2_merged\data_merged_v1.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
