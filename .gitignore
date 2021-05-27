@@ -1,14 +1,11 @@
-/generated_/*
-/obrazy/*
-/pomocnicze/*
-/images/
-/created/generated/*
-/created/*/gen*
-/yolo-coco/*
-/e/*
+/backgrounds_old/*
+/created/*
+/images/*
 /from_coco_db/*
 /!from_coco_db/heatmaps/*
-/test.py
-/test1.py
-/test2.py
-/wnioski z danych/*
+/obrazy/*
+/pomocnicze/*
+/test_dir/*
+change_letters.py
+concat_csv.py
+/yolo-coco/*

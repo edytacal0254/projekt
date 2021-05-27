@@ -2,8 +2,8 @@ import os
 import pandas as pd
 
 first_path = os.getcwd() + "\\created\\data_v1_v2_merged\\data_merged_v1.csv"
-second_path = os.getcwd() + "\\created\\data_v1_v2_merged\\data_merged_v2.csv"
-concat_path = os.getcwd() + "\\created\\data_v1_v2_merged\\data_concat_v1_v2.csv"
+second_path = os.getcwd() + "\\created\\data_v1_v2_merged\\changed_letter.csv"
+concat_path = os.getcwd() + "\\created\\data_v1_v2_merged\\data_concat_all.csv"
 
 if not (os.path.isfile(first_path) and os.path.isfile(second_path)):
     print("at least one of the stated files does not exist")

@@ -12,13 +12,17 @@ gen_images = True
 # input images and csv file
 # \\created\\generated
 images_dir = os.getcwd() + "\\created\\_v1\\generated_v1"
+#images_dir = os.getcwd() + "\\created\\_v2\\generated_v2"
 
 
 #images_list = ["B11_003796.jpg"]
 #images_list = ["B14_004126.jpg","B14_004128.jpg","B14_004129.jpg"] #not ok
 #images_list = ["B14_004125.jpg","B14_004127.jpg"] #ok
-#images_list = ["D06_008238.jpg", "D06_008241.jpg", "D06_008243.jpg", "D06_008244.jpg", "D07_008363.jpg"]
-images_list = ["C08_005884.jpg", "C08_005914.jpg"]
+images_list = ["D06_008238.jpg", "D06_008241.jpg", "D06_008243.jpg", "D06_008244.jpg", "D07_008363.jpg"]
+#images_list = ["C08_005884.jpg", "C08_005914.jpg"]
+#images_list = ["E15_002879.jpg","E05_000843.jpg"]
+#images_list = ["F14_006604.jpg","F14_006602.jpg","F14_006600.jpg"]
+#images_list = ["F14_006601.jpg","F14_006603.jpg","F14_006605.jpg","F14_006606.jpg","F14_006607.jpg"]
 detecting_classes = ["apple", "dog", "car", "chair"]
 
 
