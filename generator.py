@@ -41,7 +41,7 @@ data_path = os.getcwd() + "\\created\\data_gen.csv"
 data_file = open(data_path, "w", encoding='utf-8', newline='')
 data_writer = csv.writer(data_file)
 
-# __________________________________________________________________________________________________
+# ___________________________________________________________________
 for idx_bon, basic_object_name in enumerate(basic_img_list):
     contains = ""
     first_l = basic_object_name[0]
@@ -73,7 +73,7 @@ for idx_bon, basic_object_name in enumerate(basic_img_list):
             new_s = 1920 / width
         if height > 1080:
             new_s = 1080 / height
-        # calc new dimensions and scale down________________________________
+        # calc new dimensions and scale down______________________________
         new_width = math.floor(width * new_s)
         new_height = math.floor(height * new_s)
         half_new_width = math.floor(new_width / 2)
@@ -90,21 +90,21 @@ for idx_bon, basic_object_name in enumerate(basic_img_list):
             tmp = basic_object_name.partition('.')
             new_name = tmp[0] + "_" + "{0:06}".format(nr_of_generated) + ".jpg"
 
-            # paste object to bg, convert to jpeg save____________________________
+            # paste object to bg, convert to jpeg save_____________________
             new_gen_img = bg_img.copy()
             new_gen_img.paste(scaled_object, cord_c, scaled_object)
             converted_img = new_gen_img.convert("RGB")
             converted_img.save(output_dir + "\\" + new_name, "jpeg")
-            # csv data___________________________________________________________
+            # csv data_____________________________________________________
             # data_row = [new_name, basic_object_name, bg_name, 100, 0]   # 100 czy new_s?
             data_row = [new_name, basic_object_name, bg_name, contains, 1, 0, cord_c[0], cord_c[1], new_width, new_height]
             data_writer.writerow(data_row)
 
             nr_of_generated += 1
-    # end of: if s_1 (unique case) _________________________________________________________
+    # end of: if s_1 (unique case) ________________________________________
 
     for s in scale:
-        # calc new dimensions and scale down________________________________
+        # calc new dimensions and scale down_______________________________
         new_width = math.floor(width * s)
         new_height = math.floor(height * s)
         half_new_width = math.floor(new_width/2)
@@ -112,7 +112,7 @@ for idx_bon, basic_object_name in enumerate(basic_img_list):
 
         scaled_object = basic_object.resize((new_width, new_height))
 
-        # coordinates____________________________________________
+        # coordinates______________________________________________________
         cord_c = (960 - half_new_width, 540 - half_new_height)
         cord_tl = (0, 0)
         cord_br = ((1920-new_width), (1080-new_height))
@@ -132,7 +132,7 @@ for idx_bon, basic_object_name in enumerate(basic_img_list):
             for idx_c, c in enumerate(cords):
                 tmp = basic_object_name.partition('.')
                 new_name = tmp[0] + "_" + "{0:06}".format(nr_of_generated) + ".jpg"
-                # paste object to bg, convert to jpeg save____________________________
+                # paste object to bg, convert to jpeg save________________
                 new_gen_img = bg_img.copy()
                 new_gen_img.paste(scaled_object, c, scaled_object)
                 converted_img = new_gen_img.convert("RGB")
