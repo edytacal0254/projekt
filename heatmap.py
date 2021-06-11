@@ -1,10 +1,7 @@
-#import csv
-#import matplotlib
 import matplotlib.pyplot as plt
 import numpy as np
 import cv2
 import os
-#import math
 
 
 def add_matrix(mat, x_, y_, w_, h_):
