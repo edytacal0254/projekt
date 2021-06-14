@@ -13,9 +13,9 @@ którym znajduje się obiekt ma wpływ na jego detekcję.
 - Wybrano cztery, znacząco różniące się od siebie klasy: jabłko, samochód,
 pies oraz krzesło
 - Dla każdej z klas wybrano po 20 obiektów, o wymiarach 1024x1024 px (jabłko
-pies), 1024x2048 px (krzesło) oraz 2048x1024 px (samochód). (folder /objects)
+pies), 1024x2048 px (krzesło) oraz 2048x1024 px (samochód).
 - Wybrano 13 teł: białe, szum RGB, po dwa charakterystyczne dla danej klasy i
-trzy losowe (folder /backgrounds)
+trzy losowe 
 - Wybrano 6 lokalizacji obiektu wg. schematu nr 1, gdzie liczba 5 oznacza
 miejsce losowe
 - Obiekty były skalowane do wielkości 25%, 18,75%, 12,5% oraz 6,25% oraz
@@ -40,20 +40,20 @@ pies, 1024x2048 px w przypadku klasy samochód oraz 2048x1024 px w
 przypadku klasy krzesło. Spreparowane obiekty można znaleźć w folderze
 objects.
 
-Napisano algorytm generator.py, którego celem było skalowanie obiektów i
+Napisano algorytm *generator.py*, którego celem było skalowanie obiektów i
 umieszczenie ich na tłach, w lokalizacjach wskazanych na schemacie nr 1. .
 Jego drugim celem było zebranie danych użytych do generacji zdjęć w pliku
 .csv.
 
-Napisano także algorytm detektor_yolo.py, który używając modelu YOLOv3
+Napisano także algorytm *detektor_yolo.py*, który używając modelu YOLOv3
 przeprowadzał rozpoznawanie obiektów na wygenerowanych wcześniej
 zdjęciach. On także zbierał dane do pliku .csv.
 
-W celu ułatwienia analizy napisano także algorytm heatmap.py, który służył
+W celu ułatwienia analizy napisano także algorytm *heatmap.py*, który służył
 wygenerowaniu map ciepła występowania interesujących nas klas na
 zdjęciach z bazy COCO.
 
-Napisano algorytmy takie jak detection_image_test.py, służący detekcji i 
+Napisano algorytmy takie jak *detection_image_test.py*, służący detekcji i 
 podglądowi wyniku działania algorytmu rozpoznającego obiekty na
 pojedynczych zdjęciach (głównie w celu analizy anomalii) oraz kilka innych
 służących głównie organizacji wytworzonych danych.
@@ -94,14 +94,14 @@ materiałów (blacha, szkło), tymczasem krzesła mogą być zbudowane z różny
 - Tło
 
 Detektor osiągał radził sobie dobrze w przypadku teł białego i szumu RGB (white i noise_RGB) 
-w przypadku wszystkich klas. Dla każdej z klas najsłabsze wyniki były dla tła z graffiti (tło backg1). 
+w przypadku wszystkich klas. Dla każdej z klas najsłabsze wyniki były dla tła z graffiti (tło *backg1*). 
 
 Dla małych skal ( 6,25% , 12,5%), można było zauważyć zależność między zawartością bazy COCO, 
 skutecznością rozpoznawania detektora. Najwyraźniej było to widać dla klasy pies:
 
 W bazie COCO, można wyróżnić dużą podgrupę zdjęć, które zawierają obiekt klasy pies na tle trawy. 
-Natomiast tła backg3 i grass to zdjęcia w zdecydowanej większości przedstawiające trawę.
-Podobną zależność można wyraźnie zauważyć także dla klasy krzesło; dla teł backg3, beach, grass.
+Natomiast tła *backg3* i *grass* to zdjęcia w zdecydowanej większości przedstawiające trawę.
+Podobną zależność można wyraźnie zauważyć także dla klasy krzesło; dla teł *backg3*, *beach*, *grass*.
 
 <br />  
 
@@ -136,14 +136,14 @@ Na 26000 wygenerowanych zdjęć wystąpiło tylko 16 anomalii (wystąpiły one t
 Polegały one najczęściej na wykryciu błędnej obiektu, gdy w istocie go tam nie było (15), i tylko raz 
 na rozpoznaniu obiektu jako dwóch różnych.
 
-Jedną z ciekawszych anomalii jest wynik detekcji przeprowadzonej na zdjęciu E15_002879. 
+Jedną z ciekawszych anomalii jest wynik detekcji przeprowadzonej na zdjęciu *E15_002879*. 
 Użyte do jego generacji tło plate zostało użyte do generacji także 1999 innych zdjęć, jednak tylko 
 w tym jednym przypadku miska została rozpoznana jako jabłko.
 
 <br />  
 
 ![Przykład anomalii: E15_002879](https://github.com/edytacal0254/projektUM_stresowanie_modelu_rozpoznaj-cego_obiekty/blob/main/raport%20i%20prezentacja/pictures_for_readme/anomaly.png?raw=true)
-<br />  Zdjęcie nr 1: E15_002879.
+<br />  Zdjęcie nr 1: *E15_002879*.
 <br />  <br />  
 
 ### 3. Wnioski
